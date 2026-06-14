@@ -1,0 +1,10 @@
+[build]
+  functions = "netlify/functions"
+
+[functions]
+  external_node_modules = ["node-fetch"]
+
+[[redirects]]
+  from = "/panel-api/*"
+  to = "/.netlify/functions/ptero-auth"
+  status = 200
